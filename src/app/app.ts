@@ -4,10 +4,11 @@ import { Hero } from './sections/hero/hero';
 import { RollBanner } from "./sections/roll-banner/roll-banner";
 import { About } from "./sections/about/about";
 import { Projects } from "./sections/projects/projects";
+import { Experience } from "./sections/experience/experience";
 
 @Component({
   selector: 'app-root',
-  imports: [Hero, RollBanner, About, Projects],
+  imports: [Hero, RollBanner, About, Projects, Experience],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
