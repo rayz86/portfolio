@@ -1,0 +1,12 @@
+<div class="card">
+    <img [src]="image" [alt]="title" class="card-image">
+
+    <div class="card-body">
+        <h3 class="card-title">{{title}}</h3>
+        <p class="card-text">
+            {{description}}
+        </p>
+        <a *ngIf="buttonUrl" [href]="buttonUrl" target="_blank"><button class="card-btn">Visit Site</button></a>
+        <span *ngIf="!buttonUrl" class="card-btn-dis">Confidential</span>
+    </div>
+</div>

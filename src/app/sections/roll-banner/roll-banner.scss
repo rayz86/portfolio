@@ -1,0 +1,48 @@
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.banner {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scroll 100s linear infinite;
+  font-size: 6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: Helvetica;
+  color: #525252; 
+}
+
+.banner span {
+  display: inline-block;
+  padding-right: 2rem;
+}
+
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.banner-wrapper::before,
+.banner-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.banner-wrapper::before {
+  left:0;
+  background: linear-gradient(to right, #000000, transparent);
+}
+
+.banner-wrapper::after {
+  right:0;
+  background: linear-gradient(to left, #000000, transparent);
+}

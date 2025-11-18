@@ -1,0 +1,113 @@
+.hero {
+  position: relative;
+  color: #fff;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;   
+  height: 200%;
+  background-image: 
+    linear-gradient(90deg, rgba(255, 255, 255, 0.256) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.256) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.3;                
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #000 0%, transparent 20%, transparent 80%, #000 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+.custom-fuzzy-style {
+  font-size: clamp(2rem, 8vw, 6rem);
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #B1AFA9;
+  padding: 0%;
+}
+
+.hero_text {
+  font-size: 8rem;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: transparent;
+  
+  //taller
+  transform: scaleY(1.3);
+  transform-origin: center;
+
+  //grains
+
+}
+
+.hover-underline {
+  font-size: 8rem;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after,
+.hover-underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ff0000, #00ffff);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}
+
+.tech-log {
+  top: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tech-log img {
+  height: 4rem;
+  width: auto;
+
+}

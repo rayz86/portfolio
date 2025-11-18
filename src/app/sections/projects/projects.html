@@ -1,0 +1,9 @@
+<div class="projects-container">
+    <app-card
+        *ngFor="let project of projects"
+        [title]="project.title"
+        [description]="project.description"
+        [image]="project.image"
+        [buttonUrl]="project.buttonUrl">
+    </app-card>
+</div>
