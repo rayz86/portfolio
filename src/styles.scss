@@ -1,4 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 * {
-    background-color: black;
+    background: black;
+}
+
+@font-face {
+    font-family: 'Induction';
+    src: url(/src/assets/fonts/Induction.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sprintura';
+    src: url(/src/assets/fonts/Sprintura.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Trobus;
+    src: url(/src/assets/fonts/TrobusExpandedPersonalUse.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sector';
+    src: url(/src/assets/fonts/sector.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
 }

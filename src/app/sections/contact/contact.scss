@@ -1,0 +1,119 @@
+.footer {
+  position: relative;
+  width: 100%;
+  
+  /* CONTROL THE HEIGHT: this stops image from stretching */
+  min-height: 450px;
+  max-height: 450px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* prevents bg leaking out */
+}
+
+/* FIXED: BG image won’t stretch weirdly anymore */
+.footer-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;           /* IMPORTANT */
+  object-fit: cover;      /* keeps proportion, crops neatly */
+  object-position: center; /* center crop */
+  z-index: 0;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;      /* fade starts at top */
+  left: 0;
+  width: 100%;
+  height: 40%; /* how big the fade is */
+  background: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0) 2%,   /* solid white at top */
+    rgba(255, 255, 255, 0) 100%  /* transparent fading into image */
+  );
+  z-index: 1; 
+  pointer-events: none;
+}
+
+.footer-card {
+  z-index: 2;
+  background: rgba(20,20,20,0.2); /* slight transparency so BG is visible */
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  width: 90%;
+  max-width: 1200px;
+  max-height: fit-content ;
+  color: #fff;
+
+  /* Glass border */
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  background: rgba(20,20,20,0); /* slight transparency so BG is visible */
+  margin-bottom: 1.2rem;
+  font-family: Induction;
+}
+
+.footer-title-end {
+  font-size: 1.8rem;
+  background: rgba(20,20,20,0); /* slight transparency so BG is visible */
+  margin-bottom: 1.2rem;
+  font-family: Induction;
+  text-align: right;
+}
+
+.socials {
+  display: flex;
+  background: rgba(20,20,20,0); /* slight transparency so BG is visible */
+  justify-content: left;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.socials a {
+  background: rgba(255,255,255,0);
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.socials a:hover {
+  background: rgba(255,255,255,0);
+  transform: translateY(-3px);
+}
+
+.socials img {
+  background: rgba(255,255,255,0);
+  width: 32px;
+  height: 32px;
+
+}
+
+.contact-number {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: right;
+  margin-top: 1rem;
+  background: rgba(20,20,20,0); /* slight transparency so BG is visible */
+  opacity: 0.9;
+}
+
+.made-with {
+  text-align: center;
+  margin-top: 2rem;
+  // font-family: Arial, Helvetica, sans-serif;
+  font-family: Trobus;
+  background: rgba(20,20,20,0); /* slight transparency so BG is visible */
+  opacity: 0.7;
+  font-size: small;
+}
