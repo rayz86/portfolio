@@ -1,0 +1,50 @@
+.exp-card {
+  width: 380px;
+  background: #242424;
+  color: #fff;
+  border-radius: 12px;
+  padding: 1.4rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  gap: 1rem;
+  font-family: sans-serif;
+}
+
+.exp-logo {
+  width: auto;
+  height: 80px;  ;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #242424;
+}
+
+.exp-body {
+  margin-top: 0.5rem;
+  background: #242424;
+}
+
+.exp-title {
+  font-size: 1.2rem;
+  background: #242424;
+  margin: 0;
+}
+
+.exp-position {
+  opacity: 0.8;
+  margin: 0.2rem 0 0.4rem;
+  background: #242424;
+}
+
+.exp-location {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  background: #242424;
+}
+
+.exp-description {
+  margin-top: 0.6rem;
+  opacity: 0.85;
+  font-size: 0.9rem;
+  background: #242424;
+  line-height: 1.4;
+  gap: 0.4rem;
+}
