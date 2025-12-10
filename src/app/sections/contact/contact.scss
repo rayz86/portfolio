@@ -40,7 +40,7 @@
 .footer-card {
   z-index: 2;
   background: rgba(20,20,20,0.2); 
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
   border-radius: 20px;
   padding: 2rem 3rem;
   width: 90%;
@@ -50,7 +50,7 @@
 
   /* Glass border */
   border: 1px solid rgba(255,255,255,0.25);
-  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+  box-shadow: 0 0 40px rgba(0,0,0,0.8);
 }
 
 .footer-title {
@@ -101,6 +101,8 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: right;
   margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
   background: rgba(20,20,20,0); 
   opacity: 0.9;
 }
@@ -156,7 +158,8 @@
   }
 
   .footer-card {
-    padding: 1rem 1.5rem;
+    padding: 2rem 1.5rem;
+    margin: 0 1rem;
   }
 
   .footer-title,

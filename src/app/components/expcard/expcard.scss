@@ -7,6 +7,8 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   gap: 1rem;
   font-family: sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .exp-logo {
@@ -81,7 +83,7 @@
 @media (max-width: 480px) {
   .exp-card {
     width: 100%;
-    max-width: 320px;
+    max-width: none;
     padding: 1rem;
   }
 

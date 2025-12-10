@@ -2,16 +2,30 @@
 
   <!-- <div class="hover-underline">RAYYAN SHAIKH</div> -->
    
-  <p class="custom-fuzzy-style">
-    <om-fuzzy-text
-    [text]="'` RAYYAN SHAIKH `'"
-    [baseIntensity]="0.6 "
+<p class="custom-fuzzy-style name-wrapper">
+
+  <om-fuzzy-text
+    [text]="'RAYYAN'"
+    [baseIntensity]="0.6"
     [hoverIntensity]="0.3"
     [enableHover]="true"
     [fuzzRange]="10"
     styleClass="custom-fuzzy-style"
-    ></om-fuzzy-text>
-  </p>
+    class="line"
+  ></om-fuzzy-text>
+
+  <om-fuzzy-text
+    [text]="'SHAIKH'"
+    [baseIntensity]="0.6"
+    [hoverIntensity]="0.3"
+    [enableHover]="true"
+    [fuzzRange]="10"
+    styleClass="custom-fuzzy-style"
+    class="line"
+  ></om-fuzzy-text>
+
+</p>
+
 
   <div class="tech-log">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="React Logo" />
@@ -19,9 +33,15 @@
     <img src="https://cdn.iconscout.com/icon/free/png-256/free-javascript-logo-icon-svg-download-png-2284965.png" alt="Javascript Logo" />
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png" alt="TypeScript Logo" />
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png" alt="Tailwind Logo" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" alt="Bootstrap Logo" />
     <img src="https://pnghdpro.com/wp-content/themes/pnghdpro/download/social-media-and-brands/google-firebase-logo-icon-hd.png" alt="Firebase Logo" />
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png" alt="Git Logo" />
     <!-- <img src="https://camo.githubusercontent.com/e88b4c24a485632930bdaa16531d35682699fa265391b011cf5ffa1ca2b6d87d/68747470733a2f2f6d65646961322e67697068792e636f6d2f6d656469612f43775476536957666c6743474b677a3565622f67697068792e676966" alt="JS Logo" /> -->
+  </div>
+
+  <div class="scroll-indicator" id="scrollIndicator">
+    <!-- <div class="scroll-text">Scroll Down</div> -->
+    <div class="scroll-arrow">↓</div>
   </div>
 
 </div>

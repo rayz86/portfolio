@@ -30,8 +30,8 @@ export class Projects {
     },
     {
       image: "mahajan_port.webp",
-      title: "Mahajan Connect - Moqsue Members Management",
-      description: "A membership management system for mosques to manage member details, ancestral history and fees tracking. Includes a fees panel for reporting.",
+      title: "Mahajan Connect - Members Management",
+      description: "A membership management system for religious institutions to manage member details, ancestral history and fees tracking. Includes a fees panel for reporting.",
       buttonUrl: "",
     }
   ]
