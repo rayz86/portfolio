@@ -61,3 +61,59 @@
     cursor: not-allowed;
     margin-top: 1rem;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        min-height: 420px;
+    }
+
+    .card-image {
+        height: 200px;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        max-width: 320px;
+        min-height: 400px;
+    }
+
+    .card-image {
+        height: 180px;
+    }
+
+    .card-body {
+        padding: 0.9rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+
+    .card-btn,
+    .card-btn-dis {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+}

@@ -19,7 +19,7 @@ export class Projects {
     {
       image: "wahcruise_port.webp",
       title: "Wah Cruises - Cruise Booking Platform",
-      description: "A cruise and yacht booking website with an admin panel to manage prices, addons, food items etc with a tracker panel to handle bookings.",
+      description: "A cruise and yacht booking website with a dynamic form to book ticketed cruises. Allows selection of inclusion like food, drinks, and other amenities.",
       buttonUrl: "https://www.wahcruises.netlify.app",
     },
     {

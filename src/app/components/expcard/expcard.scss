@@ -48,3 +48,60 @@
   line-height: 1.4;
   gap: 0.4rem;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .exp-card {
+    width: 100%;
+    max-width: 380px;
+    padding: 1.2rem;
+  }
+
+  .exp-logo {
+    height: 70px;
+  }
+
+  .exp-title {
+    font-size: 1.1rem;
+  }
+
+  .exp-position {
+    font-size: 0.95rem;
+  }
+
+  .exp-location {
+    font-size: 0.8rem;
+  }
+
+  .exp-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .exp-card {
+    width: 100%;
+    max-width: 320px;
+    padding: 1rem;
+  }
+
+  .exp-logo {
+    height: 60px;
+  }
+
+  .exp-title {
+    font-size: 1rem;
+  }
+
+  .exp-position {
+    font-size: 0.9rem;
+  }
+
+  .exp-location {
+    font-size: 0.75rem;
+  }
+
+  .exp-description {
+    font-size: 0.8rem;
+  }
+}
