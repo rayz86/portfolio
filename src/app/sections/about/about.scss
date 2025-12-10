@@ -23,6 +23,10 @@
   flex: 1;
 }
 
+.about-title {
+  text-align: center;
+}
+
 /* GREET */
 .about-content h2 {
   font-size: 2.2rem;
@@ -40,7 +44,6 @@
   color: #CFCFCF;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 /* Responsiveness */
 @media (max-width: 768px) {
   .container {
@@ -65,6 +68,7 @@
 
   .about-content p {
     font-size: 1rem;
+    text-align: left;
   }
 }
 
@@ -81,6 +85,7 @@
 
   .about-content {
     max-width: 95%;
+    text-align: left;
   }
 
   .about-content h2 {
@@ -99,6 +104,10 @@
     gap: 0.75rem;
   }
 
+    .about-title {
+    text-align: left;
+  }
+
   .about-image {
     width: 60%;
     max-width: 200px;
@@ -106,6 +115,8 @@
 
   .about-content {
     max-width: 100%;
+    text-align: left;
+
   }
 
   .about-content h2 {
