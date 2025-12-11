@@ -15,7 +15,7 @@ export class Experience {
       company: "Dream Code Studio",
       position: "Full Stack Developer",
       location: "Mapusa, Goa - India",
-      duration: "01 April 2025 - 01 November 2025",
+      duration: "01 April 2025 - 30 November 2025",
       description:
         "I contributed to multiple client projects as a fullstack developer, building responsive and user-friendly interfaces using React.js, Vite, Tailwind CSS and Firebase DB. I have also worked on collaborating on UI/UX, animations, video editing and performance optimization."
     },
