@@ -1,12 +1,19 @@
-<div class="card">
-    <img [src]="image" [alt]="title" class="card-image">
+<article class="card">
+    <div class="card-media">
+        <img [src]="image" [alt]="title" class="card-image" loading="lazy" decoding="async">
+    </div>
 
     <div class="card-body">
         <h3 class="card-title">{{title}}</h3>
         <p class="card-text">
             {{description}}
         </p>
-        <a *ngIf="buttonUrl" [href]="buttonUrl" target="_blank"><button class="card-btn">Visit Site</button></a>
-        <span *ngIf="!buttonUrl" class="card-btn-dis">Confidential</span>
+        @if (buttonUrl) {
+            <a class="card-btn" [href]="buttonUrl" target="_blank" rel="noopener noreferrer">
+                Visit site <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+        } @else {
+            <span class="card-btn-dis">Confidential</span>
+        }
     </div>
-</div>
+</article>

@@ -1,9 +1,27 @@
-<app-hero></app-hero>
-<app-roll-banner text="WHOAMI"/>
-<app-about />
-<app-roll-banner text="WHATIDID"/>
-<app-projects />
-<app-roll-banner text="EXPERIENCE"/>
-<app-experience />
-<app-roll-banner text="CONNECT"/>
-<app-contact />
+<app-navbar />
+
+<main>
+  <section id="top">
+    <app-hero />
+  </section>
+
+  <section id="about" aria-label="About">
+    <app-roll-banner text="WHOAMI" />
+    <app-about />
+  </section>
+
+  <section id="projects" aria-label="Projects">
+    <app-roll-banner text="WHATIDID" />
+    <app-projects />
+  </section>
+
+  <section id="experience" aria-label="Experience">
+    <app-roll-banner text="EXPERIENCE" />
+    <app-experience />
+  </section>
+</main>
+
+<section id="contact" aria-label="Contact">
+  <app-roll-banner text="CONNECT" />
+  <app-contact />
+</section>

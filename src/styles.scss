@@ -1,13 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
-* {
-    background: black;
-}
-
 @font-face {
     font-family: 'Induction';
     src: url('assets/fonts/Induction.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -15,6 +11,7 @@
     src: url('assets/fonts/Sprintura.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -22,6 +19,7 @@
     src: url('assets/fonts/TrobusExpandedPersonalUse.ttf') format(truetype);
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -29,8 +27,94 @@
     src: url('assets/fonts/sector.ttf') format(truetype);
     font-weight: normal;
     font-style: normal;
-}
-html {
-  scroll-behavior: smooth;
+    font-display: swap;
 }
 
+:root {
+    --bg: #000;
+    --surface: #141414;
+    --surface-2: #1c1c1c;
+    --border: rgba(255, 255, 255, 0.1);
+    --border-strong: rgba(255, 255, 255, 0.22);
+    --text: #f2f2f2;
+    --text-muted: #a3a3a3;
+    --text-dim: #6b6b6b;
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
+    --font-body: 'Segoe UI', system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-display: Trobus, var(--font-body);
+    --radius: 14px;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    background: var(--bg);
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+::selection {
+    background: var(--accent);
+    color: #fff;
+}
+
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* Scroll-reveal, driven by the appReveal directive */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}

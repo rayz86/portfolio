@@ -1,9 +1,12 @@
 <div class="projects-container">
-    <app-card
-        *ngFor="let project of projects"
-        [title]="project.title"
-        [description]="project.description"
-        [image]="project.image"
-        [buttonUrl]="project.buttonUrl">
-    </app-card>
+    @for (project of projects; track project.title; let i = $index) {
+        <app-card
+            appReveal
+            [revealDelay]="(i % 2) * 120"
+            [title]="project.title"
+            [description]="project.description"
+            [image]="project.image"
+            [buttonUrl]="project.buttonUrl">
+        </app-card>
+    }
 </div>

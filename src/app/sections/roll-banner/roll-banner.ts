@@ -1,10 +1,9 @@
 import { Component, Input, isSignal, type Signal } from '@angular/core';
-import { NgFor } from "@angular/common";
 import { RepeatPipe } from '../../pipes/repeat-pipe';
 
 @Component({
   selector: 'app-roll-banner',
-  imports: [NgFor, RepeatPipe],
+  imports: [RepeatPipe],
   templateUrl: './roll-banner.html',
   styleUrl: './roll-banner.scss',
 })

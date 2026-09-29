@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { Card } from "../../components/card/card";
-import { NgFor } from '@angular/common';
+import { Reveal } from "../../directives/reveal";
 
 @Component({
   selector: 'app-projects',
-  imports: [NgFor, Card],
+  imports: [Card, Reveal],
   templateUrl: './projects.html',
   styleUrl: './projects.scss',
 })
@@ -20,7 +20,7 @@ export class Projects {
       image: "wahcruise_port.webp",
       title: "Wah Cruises - Cruise Booking Platform",
       description: "A cruise and yacht booking website with a dynamic form to book ticketed cruises. Allows selection of inclusion like food, drinks, and other amenities.",
-      buttonUrl: "https://www.wahcruises.netlify.app",
+      buttonUrl: "https://wahcruises.vercel.app",
     },
     {
       image: "proline_port.webp",

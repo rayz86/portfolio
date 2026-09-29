@@ -1,12 +1,14 @@
-<div class="exp-card">
-  <img class="exp-logo" [src]="logo" alt="Company Logo" />
+<article class="exp-card">
+  <div class="exp-header">
+    <img class="exp-logo" [src]="logo" [alt]="companyName + ' logo'" loading="lazy" />
+  </div>
 
   <div class="exp-body">
-    <h3 class="exp-title">{{ companyName }}</h3>
-    <h4 class="exp-position">{{ position }}</h4>
-    <p class="exp-location">{{ duration }} | {{ location }}</p>
+    <h3 class="exp-title">{{ position }}</h3>
+    <h4 class="exp-company">{{ companyName }}</h4>
+    <p class="exp-meta">{{ duration }} &middot; {{ location }}</p>
     <p class="exp-description">
       {{ description }}
     </p>
   </div>
-</div>
+</article>

@@ -1,18 +1,19 @@
 <div class="container">
-    <img src="port_pic.webp" alt="About Image" class="about-image">
-    <div class="about-content">
-        <div class="about-title">
-            <h2>Hey, I'm Rayyan</h2>
-        </div>
-        <p> I’m a Computer Engineer and Full-Stack Developer who loves turning ideas into real, 
-            functional products.<br> I’ve delivered multiple client projects, and I enjoy building clean, 
-            fast, and intuitive user experiences. 
+    <div class="about-image-wrap" appReveal>
+        <img src="port_pic.webp" alt="Portrait of Rayyan Shaikh" class="about-image" loading="lazy" decoding="async">
+    </div>
+
+    <div class="about-content" appReveal [revealDelay]="120">
+        <h2>Hey, I'm Rayyan<span class="wave" aria-hidden="true">👋</span></h2>
+        <p> I’m a Computer Engineer and Full-Stack Developer who loves turning ideas into real,
+            functional products. I’ve delivered multiple client projects, and I enjoy building clean,
+            fast, and intuitive user experiences.
         </p>
-        <p> I’m big on learning, experimenting, 
+        <p> I’m big on learning, experimenting,
             and shipping. Frontend, backend, debugging something that broke at 2 AM...
             I’m always up for the challenge.
-        </p> 
-        <p> Outside of tech, I’m a huge car enthusiast and a rap music fan which sums up my vibe pretty 
+        </p>
+        <p> Outside of tech, I’m a huge car enthusiast and a rap music fan which sums up my vibe pretty
             well.
         </p>
     </div>

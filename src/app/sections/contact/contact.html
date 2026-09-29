@@ -1,34 +1,36 @@
 <footer class="footer">
-  
+
   <!-- Vector Background -->
-  <img src="mazda.webp" class="footer-bg" alt="Footer Vector Art" />
+  <img src="mazda.webp" class="footer-bg" alt="" loading="lazy" decoding="async" />
 
   <!-- Contact Card -->
-  <div class="footer-card">
-    <h2 class="footer-title">CONNECT</h2>
+  <div class="footer-card" appReveal>
+    <div class="footer-top">
+      <div class="footer-heading-wrap">
+        <h2 class="footer-title">Let's build something !</h2>
+      </div>
+    </div>
 
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/rayyan-shaikh-41287a232/" target="_blank">
-        <img src="https://www.iconpacks.net/icons/1/free-linkedin-icon-130-thumb.png">
+    <div class="contact-links">
+      <a [href]="'mailto:' + email" class="contact-link">
+        <lucide-icon [img]="MailIcon" [size]="18"></lucide-icon>
+        {{ email }}
       </a>
-      <a href="https://www.github.com/rayz86" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg">
-      </a>
-      <a href="https://www.instagram.com/rayyan.86" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png">
-      </a>
-      <a href="mailto::rayyan3886@gmail.com" target="_blank">
-        <img src="https://cdn.iconscout.com/icon/free/png-256/free-gmail-logo-icon-svg-download-png-2476484.png?f=webp">
+      <a [href]="phoneHref" class="contact-link">
+        <lucide-icon [img]="PhoneIcon" [size]="18"></lucide-icon>
+        {{ phone }}
       </a>
     </div>
 
-    <h2 class="footer-title-end">Contact</h2>
-    <!-- <p class="contact-number">+971 52 947 3191</p> -->
-    <p class="contact-number">+91 73872 83828</p>
+    <div class="socials">
+      @for (social of socials; track social.label) {
+        <a [href]="social.href" target="_blank" rel="noopener noreferrer" [attr.aria-label]="social.label" [title]="social.label">
+          <lucide-icon [img]="social.icon" [size]="22" [strokeWidth]="1.75"></lucide-icon>
+        </a>
+      }
+    </div>
 
-    <p class="made-with">
-      © 2025 Rayyan Shaikh
-    </p>
+    <p class="made-with">© {{ year }} Rayyan Shaikh</p>
   </div>
 
 </footer>

@@ -1,11 +1,14 @@
-<div class="experience-container">
-  <app-expcard
-    *ngFor="let exp of experiences"
-    [companyName]="exp.company"
-    [position]="exp.position"
-    [location]="exp.location"
-    [logo]="exp.logo"
-    [duration]="exp.duration"
-    [description]="exp.description"
-  ></app-expcard>
-</div>
+<ol class="timeline">
+  @for (exp of experiences; track exp.company; let i = $index) {
+    <li class="timeline-item" appReveal [revealDelay]="i * 80">
+      <app-expcard
+        [companyName]="exp.company"
+        [position]="exp.position"
+        [location]="exp.location"
+        [logo]="exp.logo"
+        [duration]="exp.duration"
+        [description]="exp.description"
+      ></app-expcard>
+    </li>
+  }
+</ol>
